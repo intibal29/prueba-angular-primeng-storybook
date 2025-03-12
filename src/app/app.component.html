@@ -8,8 +8,32 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
+    <div class="card">
+      <p-tabMenu [model]="items" />
+  </div>
+    <div class="card flex justify-content-center">
+      <input
+          pInputText
+          class="ng-invalid ng-dirty"
+          [(ngModel)]="value" />
+  </div>
+  <div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" />
+    <p-button label="Secondary" severity="secondary" />
+    <p-button label="Success" severity="success" />
+    <p-button label="Info" severity="info" />
+    <p-button label="Warning" severity="warning" />
+    <p-button label="Help" severity="help" />
+    <p-button label="Danger" severity="danger" />
+    <p-button label="Contrast" severity="contrast" />
+</div>
     <!-- Usar el componente p-calendar de PrimeNG -->
-    <p-calendar [(ngModel)]="date"></p-calendar>  <!-- Enlaza la propiedad date con el calendario -->
-    <app-root></app-root>  <!-- El componente root -->
+<!-- Usar el componente p-calendar de PrimeNG -->
+<p-calendar
+  [(ngModel)]="date1"
+  [showIcon]="true"
+  [showOnFocus]="false"
+  inputId="buttondisplay">
+</p-calendar>
   </body>
 </html>
