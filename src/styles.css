@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'primeng/resources/themes/lara-light-indigo/theme.css';  /* Estilo del tema de PrimeNG */
+@import 'primeng/resources/primeng.min.css';  /* Estilo de los componentes de PrimeNG */
+@import 'primeicons/primeicons.css';  /* Estilo de los iconos de PrimeNG */
