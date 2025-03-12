@@ -1,4 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'primeng/resources/themes/lara-light-indigo/theme.css';  /* Estilo del tema de PrimeNG */
-@import 'primeng/resources/primeng.min.css';  /* Estilo de los componentes de PrimeNG */
-@import 'primeicons/primeicons.css';  /* Estilo de los iconos de PrimeNG */
+/* Importaciones de PrimeNG */
+@import 'primeng/resources/themes/lara-light-indigo/theme.css';  
+@import 'primeng/resources/primeng.min.css';  
+@import 'primeicons/primeicons.css';  
+
+/* Estilos Globales */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tarjetas (p-card) */
+.p-card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.p-card:hover {
+  transform: scale(1.02);
+}
+
+/* Botones */
+.p-button {
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.p-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Inputs */
+.p-inputtext {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.p-inputtext:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Tab Menu */
+.p-tabmenu .p-tabmenu-nav {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.p-tabmenu .p-tabmenu-nav li {
+  transition: background 0.3s ease-in-out;
+}
+
+.p-tabmenu .p-tabmenu-nav li.p-highlight {
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Calendario */
+.p-calendar {
+  width: 100%;
+}
+
+.p-calendar .p-inputtext {
+  width: 100%;
+}
+
+/* Contenedor Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Grid */
+.p-grid {
+  gap: 1rem;
+}
+
+.p-col {
+  padding: 1rem;
+}
+
+/* Divider */
+.p-divider {
+  margin: 2rem 0;
+}
