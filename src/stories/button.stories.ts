@@ -1,12 +1,12 @@
 import { moduleMetadata, type Meta, type StoryObj } from '@storybook/angular';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'primeng/button';  // Importar ButtonModule de PrimeNG
 
 export default {
   title: 'PrimeNG/Button',
   tags: ['autodocs'],  // 🔹 Activa la documentación automática en la pestaña "Docs"
   decorators: [
     moduleMetadata({
-      imports: [ButtonModule],
+      imports: [ButtonModule],  // Asegúrate de importar ButtonModule de PrimeNG
     }),
   ],
   parameters: {
@@ -20,14 +20,14 @@ export default {
 
 const Template = (args: any) => ({
   props: args,
-  template: `<p-button [label]="label" [severity]="severity"></p-button>`,
+  template: `<p-button [label]="label" [styleClass]="styleClass"></p-button>`,  // Usamos styleClass para cambiar el estilo
 });
 
 export const Primary: StoryObj = {
   render: Template,
   args: {
-    label: 'Primary',
-    severity: 'primary',
+    label: 'Primary',  // Definimos el texto del botón
+    styleClass: 'p-button-primary',  // Estilo para un botón primario
   },
   parameters: {
     docs: {
@@ -41,8 +41,8 @@ export const Primary: StoryObj = {
 export const Success: StoryObj = {
   render: Template,
   args: {
-    label: 'Success',
-    severity: 'success',
+    label: 'Success',  // Texto para el botón de éxito
+    styleClass: 'p-button-success',  // Estilo para un botón de éxito
   },
   parameters: {
     docs: {
@@ -56,8 +56,8 @@ export const Success: StoryObj = {
 export const Danger: StoryObj = {
   render: Template,
   args: {
-    label: 'Danger',
-    severity: 'danger',
+    label: 'Danger',  // Texto para el botón de peligro
+    styleClass: 'p-button-danger',  // Estilo para un botón de peligro
   },
   parameters: {
     docs: {
